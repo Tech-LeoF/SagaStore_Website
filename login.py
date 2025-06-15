@@ -26,7 +26,7 @@ def acceder():
     cursor.close()
 
     if usuario and bcrypt.checkpw(password, usuario[1].encode('utf-8')):
-        return render_template('main.html', nombre=usuario[0])
+        return render_template('LandPage.html', nombre=usuario[0])
     else:
         return 'Contraseña o correo incorrectos'
 
