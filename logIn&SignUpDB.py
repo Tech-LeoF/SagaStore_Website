@@ -37,7 +37,7 @@ def registrar():
     mysql.connection.commit()
     cursor.close()
 
-    return f'tu usuario {nombre} se ha registrado correctamente'
+    return render_template('main.html', nombre=nombre)
 
 if __name__ == '__main__':
     app.run(debug=True)
