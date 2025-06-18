@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SagaStore</title>
+    <link rel="icon" href="/static/Logo.png">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body style="background-color: #F3FEB8;">
+    <nav class="navBar">
+        <img src="/static/Logo.png" alt="" height="80">
+        <button>Home 🏠</button>
+        <button>Order 🛒</button>
+        <button>Chat 📣</button>
+        <input placeholder="Search" type="search">
+        
+        <a href="/ajustes"><button id="boton">Settings ⚙️</button></a>
+        <img src="/static/User.webp" alt="" height="80">
+        <p>{{nombre}}</p>
+    </nav>
+
+    <h1 id="title">Product areas</h1>
+
+    <section class="categories">
+        <div>
+            <h2 class="categoriesTitle">Cleaning section</h2>
+            <a href="">
+                <div style="background-color: #B4E380; border-radius: 20px;">
+                    <img style="padding: 20px;" src="/static/basket.png" alt="" height="200">
+                </div>
+            </a>
+        </div>
+        <div>
+            <h2 class="categoriesTitle">Food</h2>
+                <div style="background-color: #B4E380; border-radius: 20px;">
+                    <img style="padding: 20px;" src="/static/diet.png" alt="" height="200">
+                </div>
+        </div>
+        <div>
+            <h2 class="categoriesTitle">Beauty section</h2>
+                <div style="background-color: #B4E380; border-radius: 20px;">
+                    <img style="padding: 20px;" src="/static/skin-care.png" alt="" height="200">
+                </div>
+        </div>
+    </section>
+
+    <h1 class="categoriesTitle">On sales</h1>
+
+    <article class="categories">
+        <a href="">
+            <div style="background-color: #B4E380; height: 300px; width: 300px; border-radius: 20px;"></div>
+        </a>
+        <a href="">
+            <div style="background-color: #B4E380; height: 300px; width: 300px; border-radius: 20px;"></div>
+        </a>
+        <a href="">
+            <div style="background-color: #B4E380; height: 300px; width: 300px; border-radius: 20px;"></div>
+        </a>
+        <a href="">
+            <div style="background-color: #B4E380; height: 300px; width: 300px; border-radius: 20px;"></div>
+        </a>
+    </article>
+
+    <footer>
+        <i style="display: flex; justify-content: center; height: 1000px; font-size: 30px; align-items: center;">Here comes further "On sale"</i>
+    </footer>
+</body>
+
+<script>
+    document.getElementById('boton').addEventListener('click', function(){
+        window.location.href = '/templates/settings.html';
+    });
+</script>
+</html>
